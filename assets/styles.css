@@ -279,10 +279,12 @@ p { text-wrap: pretty; }
 .hero-meta .hm .v small { display: block; font-weight: 400; color: var(--ink-2); font-size: .9rem; }
 
 .hero-art { position: relative; }
-.hero-art .slot-main { width: 100%; aspect-ratio: 4/5; background: linear-gradient(150deg, var(--caramel-soft), var(--berry-soft) 72%, var(--cream-2)); }
+.hero-art .slot-main { width: 100%; aspect-ratio: 4/5; border-radius: 20px; background-image: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=820&q=72'), linear-gradient(150deg, var(--caramel-soft), var(--berry-soft) 72%, var(--cream-2)); background-size: cover; background-position: center; box-shadow: 0 30px 60px -34px rgba(42,31,24,.5); }
 .hero-art .slot-float {
   position: absolute; bottom: -28px; left: -34px; width: 42%; aspect-ratio: 1/1;
   border: 6px solid var(--cream); border-radius: var(--r); box-shadow: var(--shadow-sm);
+  background-image: url('https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=460&q=72');
+  background-size: cover; background-position: center;
 }
 .hero-badge {
   position: absolute; top: -18px; right: -14px;
