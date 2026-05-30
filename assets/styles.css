@@ -296,7 +296,7 @@ p { text-wrap: pretty; }
 .hero-badge b { display: block; font-style: normal; font-family: var(--font-body); font-weight: 800; font-size: 1.5rem; letter-spacing: -.01em; }
 @media (max-width: 860px){
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-art { order: -1; max-width: 440px; margin-inline: auto; }
+  .hero-art { order: -1; width: 100%; max-width: 440px; margin-inline: auto; }
   .hero-art .slot-main { aspect-ratio: 4 / 3.2; }
   .hero-art .slot-float { width: 34%; left: -10px; bottom: -14px; }
 }
