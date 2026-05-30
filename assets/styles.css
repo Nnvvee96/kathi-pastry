@@ -61,7 +61,7 @@
 /* ---------- reset ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; background: var(--ink-block); }
 body {
   font-family: var(--font-body);
   font-size: var(--t-body);
@@ -193,12 +193,14 @@ p { text-wrap: pretty; }
 .util-phone svg { width: 14px; height: 14px; }
 
 @media (prefers-reduced-motion: reduce){ .fresh-track { animation: none; } .live-dot::after, .s-dot::after { animation: none; } }
-@media (max-width: 820px){ .util-phone { display: none; } }
-@media (max-width: 600px){
-  .open-status { padding: .5rem .8rem; gap: .8rem; }
+@media (max-width: 760px){
+  .util-phone { display: none; }
+  .fresh-zone { display: none; }
+  .open-status { flex: 1; justify-content: center; border-right: 0; flex-wrap: wrap; gap: .3rem .9rem; padding: .55rem .8rem; }
+}
+@media (max-width: 380px){
   .open-status .ls-detail { display: none; }
-  .fresh-tag { font-size: .64rem; padding: .5rem .7rem; letter-spacing: .07em; }
-  .fresh-item { font-size: .78rem; }
+  .open-status { gap: .3rem 1.1rem; }
 }
 
 /* ---------- header ---------- */
@@ -289,8 +291,9 @@ p { text-wrap: pretty; }
 .hero-badge b { display: block; font-style: normal; font-family: var(--font-body); font-weight: 800; font-size: 1.5rem; letter-spacing: -.01em; }
 @media (max-width: 860px){
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-art { order: -1; max-width: 460px; margin-inline: auto; }
-  .hero-art .slot-float { width: 38%; left: -14px; bottom: -18px; }
+  .hero-art { order: -1; max-width: 440px; margin-inline: auto; }
+  .hero-art .slot-main { aspect-ratio: 4 / 3.2; }
+  .hero-art .slot-float { width: 34%; left: -10px; bottom: -14px; }
 }
 @media (max-width: 600px){
   .hero-badge { width: 84px; height: 84px; font-size: .8rem; top: -10px; right: -6px; }
